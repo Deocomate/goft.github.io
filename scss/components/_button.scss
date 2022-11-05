@@ -1,0 +1,66 @@
+.button-link {
+    text-decoration: none;
+}
+.custom-button {
+    width: 344px;
+    height: 67.11px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+    color: $color-semantic-4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    /* Linear/4 */
+    background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+    border-radius: 50px;
+    &.button-green {
+        background: linear-gradient(180deg, #5fe320 0%, #03a550 100%) !important;
+    }
+}
+.button-reg {
+    height: 48px;
+    width: 215px;
+    border-radius: 12px;
+    // text-align: center;
+    justify-content: center;
+
+    //styleName: Heading/6;
+    // font-family: SVN-Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    @include media($phone) {
+        height: 48px;
+        width: 215px;
+        border-radius: 12px;
+    }
+}
+.button-reg-sm {
+    height: 28px;
+    width: 136px;
+    border-radius: 12px;
+    // text-align: center;
+    justify-content: center;
+    //styleName: Heading/6;
+    // font-family: SVN-Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0;
+    border-radius: 8px;
+}
+.button-yellow {
+    background: linear-gradient(92.74deg, #fcd878 0%, #ffc62f 100%);
+    //styleName: Heading/6;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}

@@ -1,0 +1,160 @@
+.news-head {
+    margin: 54px 0px 68px;
+    h1 {
+        /* Heading/1 */
+        // font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 38px;
+
+        /* Linear/4 */
+
+        background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    h5 {
+        //styleName: Heading/3;
+        // font-family: SVN-Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $color-neutral-2;
+        margin-bottom: 7px;
+    }
+    p {
+        //styleName: Body/2;
+        // font-family: SVN-Gilroy;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 55px;
+    }
+}
+.news-post {
+    margin-bottom: 40px;
+    .latest-post {
+        .card-news {
+            .card {
+                background: #ffffff;
+                /* 2 */
+                box-shadow: 0px 0px 12px rgba(208, 208, 208, 0.4);
+                border-radius: 8px;
+                .head-card {
+                    > img {
+                        width: 100%;
+                        height: 450px;
+                        object-fit: cover;
+                        border-radius: 7px 7px 0px 0px;
+                    }
+                }
+
+                .card-body {
+                    margin-top: 0px;
+                    padding: 27px 51px 38px 37px;
+                    h5 {
+                        // font-family: "SVN-Gilroy";
+                        // font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        /* identical to box height, or 133% */
+                        /* Gray 1 */
+                        color: #333333;
+                        margin-bottom: 17px;
+                    }
+                    p {
+                        // font-family: "SVN-Gilroy";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        /* or 133% */
+
+                        font-feature-settings: "liga" off;
+
+                        /* Gray 2 */
+
+                        color: #4f4f4f;
+                    }
+                }
+            }
+            .overlay {
+                padding: 23px 37px;
+                button {
+                    height: 43.9999961853029px;
+                    width: 44.00000381469743px;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    /* 2 */
+                    box-shadow: 0px 0px 12px rgba(208, 208, 208, 0.4);
+                    img {
+                        transform: translateX(1px) scale(1.6);
+                    }
+                }
+            }
+        }
+    }
+    .post-card {
+        margin-bottom: 25px;
+    }
+}
+.more {
+    margin-bottom: 206px;
+}
+
+@include media($phone) {
+    .news-head {
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+    .news-head h1 {
+        margin-bottom: 12px;
+        //styleName: Heading/1;
+        // font-family: SVN-Gilroy;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 45px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .news-head p {
+        margin-bottom: 0px;
+        //styleName: Label/3;
+        // font-family: SVN-Gilroy;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .news-post .post-card {
+        margin-bottom: 32px;
+    }
+    .news-post {
+        margin-bottom: 20px;
+    }
+    .form-custom h3 {
+        //styleName: Heading/3;
+        // font-family: SVN-Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .form-custom form .submit{
+        margin-top: 36px;
+    }
+    .form-custom{
+        margin-bottom: 80px;
+    }
+}

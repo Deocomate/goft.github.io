@@ -1,0 +1,319 @@
+.card-item {
+    a {
+        text-decoration: none;
+        .card {
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            transition: 0.5s;
+            &:hover {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            border-radius: 18px;
+            .top-img {
+                position: relative;
+                img:first-child {
+                    width: 100%;
+                }
+                img {
+                    &:last-child {
+                        position: absolute;
+                        top: 100%;
+                        right: 27px;
+                        transform: translate(0px, -50%);
+                    }
+                }
+            }
+            .card-body {
+                padding: 18px 24px 36px 24px;
+                h5 {
+                    //styleName: Heading/4;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    margin-bottom: 12px;
+                    color: #1172ba;
+                }
+                p {
+                    //styleName: Label/2;
+                    // font-family: SVN-Gilroy;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(79, 79, 79, 1);
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+.course-info-card {
+    max-width: 525px;
+    position: relative;
+    z-index: 0;
+    .card {
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+            rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        padding: 24px 25px;
+        border: none;
+        max-width: 525px;
+        height: 164px;
+        padding-top: 19px;
+        border-radius: 20px;
+        .card-body {
+            padding: 0px;
+        }
+        p {
+            span {
+                //styleName: Body/2;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+            b {
+                //styleName: Heading/4;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+            margin-bottom: 8px;
+        }
+    }
+    &.blue {
+        &::after {
+            content: "";
+            display: block;
+            width: 90%;
+            height: 144px;
+            position: absolute;
+            top: 5%;
+            left: 5px;
+            background: linear-gradient(110.45deg, #1172ba 13.51%, #15a8fb 83.06%);
+            filter: blur(14px);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            /* identical to box height, or 150% */
+            /* Linear/4 */
+            background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 9px;
+        }
+    }
+}
+.card-news {
+    .card {
+        border: none;
+        > img {
+            height: 288px;
+            border-radius: 18px;
+            object-fit: cover;
+        }
+        .card-body {
+            margin: 24px 0px 0px;
+            padding: 0px;
+            h5 {
+                //styleName: Heading/Headline/2;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(51, 51, 51, 1);
+                margin-bottom: 16px;
+            }
+            p {
+                // font-family: SVN-Gilroy;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(79, 79, 79, 1);
+                margin-bottom: 0px;
+                //styleName: Label/4;
+                // font-family: SVN-Gilroy;
+            }
+        }
+    }
+    .head-card {
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            //styleName: Heading/Headline/2;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $color-semantic-9;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            height: 28.000000000000107px;
+            width: 28.000000000000107px;
+            left: 28px;
+            top: 28px;
+            border: none;
+            display: flex;
+            align-items: center;
+            transition: 0.5s;
+            justify-content: center;
+            img {
+                transform: translateX(1px);
+            }
+            &:hover {
+                background-color: $color-semantic-6;
+            }
+        }
+    }
+}
+.post-card {
+    border: none;
+    box-shadow: 0px 0px 12px rgba(208, 208, 208, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    .card-img-custom {
+        img {
+            height: 100%;
+            width: 214px;
+            object-fit: cover;
+        }
+    }
+    .card-content-custom {
+        padding: 23px 36px 18px 24px;
+        h5 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            /* or 133% */
+
+            /* Gray 1 */
+
+            color: #333333;
+            margin-bottom: 15px;
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            /* or 133% */
+
+            font-feature-settings: "liga" off;
+
+            /* Gray 2 */
+
+            color: #4f4f4f;
+            margin-bottom: 20px;
+        }
+        .d-flex {
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                /* identical to box height, or 133% */
+                font-feature-settings: "liga" off;
+                /* Neutral/2 */
+                color: #575757;
+            }
+            button {
+                border: none;
+                width: auto;
+                height: auto;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                transform: translate(0px, -1px);
+            }
+        }
+    }
+}
+@include media($phone) {
+    .post-card .card-img-custom img {
+        width: 131px;
+        border-radius: 8px 0px 0px 8px;
+    }
+    .post-card .card-content-custom {
+        padding: 14px 22px 9px 14px;
+    }
+    .post-card .card-content-custom h5 {
+        //styleName: Label/2;
+        // font-family: SVN-Gilroy;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .post-card .card-content-custom p {
+        // font-family: SVN-Gilroy;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    .post-card .card-content-custom .d-flex span {
+        // font-family: SVN-Gilroy;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+
+@include media($phone) {
+    .card-news .card .card-body h5 {
+        //styleName: Heading/Headline/2;
+        // font-family: SVN-Gilroy;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    .card-news .card .card-body p {
+        // font-family: SVN-Gilroy;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .card-news {
+        margin-bottom: 40px;
+    }
+}

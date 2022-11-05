@@ -1,0 +1,92 @@
+footer {
+    padding: 117px 0px 91px;
+    background-color: #eff5f5;
+    .logo {
+        margin-bottom: 28px;
+    }
+    .content {
+        p {
+            //styleName: Heading/Headline/4;
+            // font-family: SVN-Gilroy;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-bottom: 8px;
+            width: 100%;
+            max-width: 249px;
+            &:last-child {
+                margin-bottom: 28px;
+            }
+        }
+    }
+    h5 {
+        //styleName: Heading/4;
+        // font-family: SVN-Gilroy;
+        color: #76bc21;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    .link-list {
+        a {
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            /* Neutral/2 */
+            color: #575757;
+        }
+    }
+    .form-head {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+
+        /* Semantic/11 */
+
+        color: #b0cdcc;
+        margin-bottom: 12px;
+    }
+    .form {
+        input {
+            height: 42px;
+            width: 283px;
+            border-radius: 2px;
+            border: none;
+            outline: none;
+            margin-bottom: 8px;
+            padding: 12 20px;
+        }
+        textarea {
+            outline: none;
+            height: 97px;
+            width: 283px;
+            border-radius: 2px;
+            border: none;
+            resize: none;
+            margin-bottom: 20px;
+            padding: 12 20px;
+        }
+    }
+}
+@include media($phone){
+    footer{
+        padding:36px;
+        .logo{
+            margin-bottom: 0px;
+        }
+        .col-1-contain{
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.form-custom {
+    h3 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 45px;
+        /* identical to box height, or 112% */
+        text-align: center;
+        /* Primary/1 */
+        color: #1172ba;
+        margin-bottom: 42px;
+    }
+    form {
+        label {
+            // font-family: "SVN-Gilroy";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            /* identical to box height, or 143% */
+            font-feature-settings: "liga" off;
+            /* Primary/1 */
+            color: #1172ba;
+            margin-bottom: 8px;
+            sup {
+                color: rgba(235, 36, 40, 1);
+            }
+        }
+        input {
+            background: #ffffff;
+            /* Semantic/3 */
+            border: 1px solid #bde3dc;
+            border-radius: 4px;
+            padding:14px 16px;
+            font-size: 14px;
+        }
+        .submit{
+            margin-top: 70px;
+
+        }
+    }
+    margin-bottom: 144px;
+}
