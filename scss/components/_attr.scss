@@ -1,0 +1,71 @@
+.attr-custom {
+    margin-top: 72px;
+    margin-bottom: 54px;
+    .card-custom {
+        padding: 13px 32px 75px;
+        border-radius: 8px;
+        p {
+            //styleName: Body/2;
+            // font-family: SVN-Gilroy;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        @include shadow(#20c0dc41);
+        .d-flex {
+            h5 {
+                width: 100%;
+                max-width: 135px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                /* or 150% */
+
+                display: flex;
+                align-items: center;
+
+                /* Linear/4 */
+
+                background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+@include media($phone) {
+    .attr-custom {
+        margin-top: 15px;
+        .image-attr {
+            margin-bottom: 22px;
+        }
+    }
+    .attr-custom .card-custom {
+        padding-bottom: 41px;
+        p {
+            //styleName: Label/3;
+            // font-family: SVN-Gilroy;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+    .attr-custom .card-custom .d-flex h5 {
+        //styleName: Heading/6;
+        // font-family: SVN-Gilroy;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+}

@@ -29,6 +29,7 @@
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-xmark"></i>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
@@ -97,18 +98,39 @@
                         mọi nơi. Mục tiêu của SNAG® là loại bỏ các rào cản về địa lý, kinh tế, xã hội nhằm đưa golf tới
                         tất cả mọi nhà. </p>
                 </div>
-                <div class="row g-3  midle" loop="4">
+                <div class="row g-3  midle">
                     <div class="col-6 col-md-6 col-lg-3">
-                        <div class="item">
+                        <div class="item shadow-red">
                             <img src="../assets/img/welcome-item.png" alt="">
                             <span>ĐƠN GIẢN</span>
-                            <div class="blur-red"></div>
+                            <!-- <div class="blur-red"></div> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item shadow-green">
+                            <img src="../assets/img/award.png" alt="">
+                            <span class="text-custom-green">ĐƠN GIẢN</span>
+                            <!-- <div class="blur-red"></div> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item shadow-blue">
+                            <img src="../assets/img/cup.png" alt="">
+                            <span class="text-custom-blue">ĐƠN GIẢN</span>
+                            <!-- <div class="blur-red"></div> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item shadow-yelow">
+                            <img src="../assets/img/4. familier.png" alt="">
+                            <span class="text-custom-yelow">ĐƠN GIẢN</span>
+                            <!-- <div class="blur-red"></div> -->
                         </div>
                     </div>
                 </div>
-                <div class="group-img">
-                    <img class="w-100" src="../assets/img/welcome-group-img.png" alt="">
-                </div>
+            </div>
+            <div class="group-img">
+                <img class="w-100" src="../assets/img/welcome-group-img.png" alt="">
             </div>
         </section>
         <section class="courses">
@@ -157,7 +179,7 @@
                                 <p>SNAG® tập trung vào một hệ thống kiến thức đơn giản dễ
                                     hiểu và một phương thức tập golf mọi lúc mọi nơi.</p>
                                 <a href="" class="button-link">
-                                    <button class="custom-button button-reg">ĐĂNG KÍ</button>
+                                    <button class="custom-button button-reg d-none d-lg-inline">ĐĂNG KÍ</button>
                                 </a>
                             </div>
                         </div>
@@ -167,6 +189,11 @@
                                 <div class="after"></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5 d-block d-lg-none">
+                        <a href="" class="button-link">
+                            <button class="custom-button button-reg">ĐĂNG KÍ</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -181,17 +208,51 @@
                 <div class="contain">
                     <div class="row g-4 g-lg-0">
                         <div class="col-12 col-lg-5">
-                            <div class="image-contain">
+                            <div class="image-contain d-flex justify-content-center d-lg-block">
                                 <img src="../assets/img/course-info.png" alt="">
                             </div>
                         </div>
                         <div class="col-12 col-lg-7">
-                            <div class="row g-0" loop="3">
-                                <div class="col-12 d-flex justify-content-end">
-                                    <div class="course-info-card blue">
-                                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-12 d-flex justify-content-center justify-content-lg-end">
+                                    <div class="course-info-card">
+                                        <div class="card shadow-blue">
                                             <div class="card-body">
-                                                <h5 class="card-title">SNAG GOLF ADULT</h5>
+                                                <h5 class="card-title text-custom-blue">SNAG GOLF ADULT</h5>
+                                                <p class="card-text">
+                                                    <span>Thời gian</span>
+                                                    <b>30 buổi / 2 tháng</b>
+                                                </p>
+                                                <p class="card-text">
+                                                    <span>Địa điểm</span>
+                                                    <b>191 Bà Triệu</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center justify-content-lg-end">
+                                    <div class="course-info-card">
+                                        <div class="card shadow-yelow">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-custom-yelow">SNAG GOLF ADULT</h5>
+                                                <p class="card-text">
+                                                    <span>Thời gian</span>
+                                                    <b>30 buổi / 2 tháng</b>
+                                                </p>
+                                                <p class="card-text">
+                                                    <span>Địa điểm</span>
+                                                    <b>191 Bà Triệu</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center justify-content-lg-end">
+                                    <div class="course-info-card">
+                                        <div class="card shadow-green">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-custom-green">SNAG GOLF ADULT</h5>
                                                 <p class="card-text">
                                                     <span>Thời gian</span>
                                                     <b>30 buổi / 2 tháng</b>

@@ -90,11 +90,14 @@
     }
     .midle {
         .item {
+            // box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            //     rgba(0, 0, 0, 0.886) 0px 30px 60px -30px;
             position: relative;
             padding: 20px;
             background: #ffffff;
             /* 2 */
-            box-shadow: 0px 0px 12px rgba(208, 208, 208, 0.4);
+            // box-shadow: 0px 0px 12px rgba(208, 208, 208, 0.4);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(239, 12, 12, 0.992) 0px 30px 60px -30px;
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -107,20 +110,20 @@
                 margin-left: 20px;
                 // background: linear-gradient(360deg, #eb2428 0%, #ffbca7 100%);
             }
-            .blur-red {
-                position: absolute;
-                left: 20%;
-                top: 10%;
-                width: 80%;
+            // .blur-red {
+            //     position: absolute;
+            //     left: 20%;
+            //     top: 10%;
+            //     width: 80%;
 
-                z-index: -10;
-                height: 100px;
-                background: #eb2428;
-                opacity: 0.3;
-                filter: blur(25px);
-                border-radius: 8px;
-                transform: rotate(-180deg);
-            }
+            //     z-index: -10;
+            //     height: 100px;
+            //     background: #eb2428;
+            //     opacity: 0.3;
+            //     filter: blur(25px);
+            //     border-radius: 8px;
+            //     transform: rotate(-180deg);
+            // }
             @include media($phone) {
                 height: 56.31066894531271px;
                 // top: 56.3106689453125px;
@@ -154,10 +157,11 @@
             max-width: 100%;
         }
         @include media($phone) {
-            margin-top: 100px;
-            // overflow: hidden;
+            margin-top: 52px;
+            overflow: hidden;
             img {
-                transform: scale(1.6);
+                width: 160% !important;
+                max-width: 160%;
             }
         }
     }
@@ -165,7 +169,7 @@
     @include media($phone) {
         padding: 0 10px;
         overflow: hidden;
-        margin-bottom: 100px;
+        margin-bottom: 52px;
     }
 }
 .courses {
@@ -229,10 +233,10 @@
 }
 .trainer {
     .trainer-contain {
-        height: 316px;
+        // height: 316px;
         background: #f4fdff;
         border-radius: 20px;
-        overflow: hidden;
+        // overflow: hidden;
     }
     .contain {
         padding: 43px 58px;
@@ -270,12 +274,11 @@
     }
     .contain-img {
         position: relative;
-        height: 316px;
+        height: 100%;
+        // height: 316px;
         img {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            width: 100%;
+            max-width: 100%;
+            height: 100%;
         }
     }
     margin-bottom: 162.4px;
@@ -307,23 +310,27 @@
                 margin-bottom: 11px;
             }
             a {
-                margin-bottom: -40px;
+                // margin-bottom: -40px;
                 display: block;
                 button {
                     position: relative;
                     top: 240px;
                     margin: 0 auto;
+                    margin-bottom: 26px;
                 }
             }
         }
         .contain-img {
             position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
             img {
+                max-width: 100%;
                 border-radius: 30px;
             }
             .after {
-                width: 100%;
-                height: 203px;
+                max-width: 100%;
                 background-color: #f4fdff;
                 border-radius: 30px;
             }
@@ -570,23 +577,26 @@
                     background-clip: text;
                     text-fill-color: transparent;
                 }
-                &:nth-of-type(2){
+                &:nth-of-type(2) {
                     margin-bottom: 20px;
                 }
             }
-            p{
+            p {
                 text-align: left;
                 margin-bottom: 45px;
                 padding: 0px 10px;
             }
         }
-        .bottom{
+        .bottom {
             margin-top: 0px;
         }
     }
 }
 
 @include media($phone) {
+    .welcome {
+        padding: 0px;
+    }
     .banner {
         margin-bottom: 72.88px;
         .banner-content {
@@ -617,7 +627,7 @@
             flex-direction: column-reverse;
         }
     }
-    .banner .banner-img img{
+    .banner .banner-img img {
         transform: scale(1.5);
     }
 }

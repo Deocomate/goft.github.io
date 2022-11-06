@@ -1,0 +1,72 @@
+.page-all-tool {
+    margin-bottom: 106px;
+    .card-tool-custom {
+        @include shadow($bg-shadow-normal);
+        // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 40px 56px 24px;
+        .head {
+            img {
+                display: block;
+                width: 100%;
+                max-width: 173px;
+                margin: 0 auto;
+                margin-bottom: 45px;
+            }
+            .content {
+                h6 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
+                    /* Primary/1 */
+
+                    color: #1172ba;
+                }
+                ul {
+                    li {
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media($phone) {
+    .head-component h1.tool_page {
+        font-size: 20px !important;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 42px 0px;
+    }
+    .head-component h5.tool_page {
+        //styleName: Heading/Headline/2;
+        // font-family: SVN-Gilroy;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .head-component p.tool_page {
+        //styleName: Label/3;
+        // font-family: SVN-Gilroy;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 42px;
+    }
+    .page-all-tool .card-tool-custom .head .content ul li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        font-feature-settings: "liga" off;
+        color: #242525;
+    }
+}

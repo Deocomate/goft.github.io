@@ -1,0 +1,40 @@
+.text-custom-red {
+    background: linear-gradient(360deg, #eb2428 0%, #ffbca7 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.text-custom-green {
+    background: linear-gradient(180deg, #5fe320 0%, #03a550 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.text-custom-blue {
+    background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.text-custom-yelow {
+    background: linear-gradient(92.74deg, #fcd878 0%, #ffc62f 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.shadow-blue {
+    box-shadow: #207bdc76 0px 7px 29px 0px!important;
+}
+.shadow-yelow {
+    box-shadow: #fcd978a4 0px 7px 29px 0px!important;
+}
+.shadow-green {
+    box-shadow: #03a5514d 0px 7px 29px 0px!important;
+}
+.shadow-red {
+    box-shadow: #ffbca763 0px 7px 29px 0px!important;
+}

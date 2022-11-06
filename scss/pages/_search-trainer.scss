@@ -1,0 +1,102 @@
+.search-trainer {
+    position: relative;
+    .img-contain {
+        display: flex;
+        justify-content: end;
+    }
+    img {
+        width: 50%;
+        height: 727px;
+        // height:
+        object-fit: cover;
+        object-position: left;
+    }
+    .heading-contain {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        width: 100%;
+        transform: translateY(-50%);
+        h1 {
+            margin-bottom: 0px;
+            width: 100%;
+            max-width: 420px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 45px;
+            color: #1172ba;
+        }
+    }
+}
+.list-trainer {
+    h2 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 45px;
+        color: #333333;
+        margin-top: 20px;
+    }
+    .container > p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4f4f4f;
+    }
+    .card-news {
+        .head-card {
+            > img {
+                height: 366px !important;
+                object-fit: cover;
+                border-radius: 18px;
+            }
+        }
+        .card-body {
+            margin-top: 0px;
+            margin-left: 10px;
+            h5 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #333333;
+                span {
+                    color: $color-semantic-8;
+                }
+            }
+        }
+    }
+}
+@include media($phone) {
+    .search-trainer img {
+        height: 300px;
+    }
+    .search-trainer .heading-contain h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        width: 150px;
+    }
+    .list-trainer h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+    }
+    .list-trainer .container > p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px; 
+        color: #4f4f4f;
+    }
+}

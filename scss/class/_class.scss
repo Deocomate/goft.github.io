@@ -1,0 +1,39 @@
+.heading-custom {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height, or 150% */
+    /* Linear/4 */
+    &.adult {
+        background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    &.kid {
+        background: linear-gradient(92.74deg, #fcd878 0%, #ffc62f 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    &.tour {
+        background: linear-gradient(180deg, #5fe320 0%, #03a550 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+@include media($phone) {
+    .heading-custom {
+        //styleName: Heading/4;
+        // font-family: SVN-Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px!important;
+        line-height: 30px;
+    }
+}

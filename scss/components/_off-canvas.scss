@@ -1,0 +1,26 @@
+.offcanvas {
+    background: rgba(254, 254, 254, 0.5);
+    backdrop-filter: blur(50px);
+    .offcanvas-header {
+        align-items: flex-start;
+        padding-top: 32px !important;
+        padding-right: 108px;
+        .contain {
+            position: relative;
+            z-index: 1000000000000000000000000000000;
+        }
+        padding-left: 53px;
+        a {
+            display: block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1172ba;
+            margin-bottom: 32px;
+        }
+        button {
+            transform: translate(0px, 2px);
+        }
+    }
+}

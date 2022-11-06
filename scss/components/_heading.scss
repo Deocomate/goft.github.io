@@ -1,0 +1,41 @@
+.head-component {
+    margin: 54px 0px 68px;
+    h1 {
+        /* Heading/1 */
+        // font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 38px;
+
+        /* Linear/4 */
+
+        background: linear-gradient(360deg, #0e78b4 0%, #20c1dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    h5 {
+        //styleName: Heading/3;
+        // font-family: SVN-Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $color-neutral-2;
+        margin-bottom: 7px;
+    }
+    p {
+        //styleName: Body/2;
+        // font-family: SVN-Gilroy;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 55px;
+    }
+}

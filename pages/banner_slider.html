@@ -12,6 +12,10 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <!-- Main -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -74,10 +78,67 @@
         </div>
     </div>
     <!-- Header -->
+    <style>
+        body {
+            font-family: sans-serif;
+        }
 
+        .gallery {
+            background: #EEE;
+        }
+
+        .gallery-cell {
+            width: 66%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            counter-increment: gallery-cell;
+        }
+
+        /* cell number */
+        .gallery-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(gallery-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
+    </style>
 
     <main>
-
+        <section class="banner">
+            <div class="container">
+                <div class="row g-2 banner-layout">
+                    <div class="col-12 col-lg-6">
+                        <div class="banner-content">
+                            <div class="contain">
+                                <h1>The sooner <span>you PLAY</span>
+                                    <span>the BETTER</span> you're
+                                </h1>
+                                <div class="d-flex justify-content-center d-lg-block">
+                                    <a href="" class="button-link">
+                                        <button class="custom-button">
+                                            <span>Get STARTED</span>
+                                            <span><img src="../assets/img/right-arrow.png" alt=""></span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="gallery main-carousel">
+                            <div class="gallery-cell"></div>
+                            <div class="gallery-cell"></div>
+                            <div class="gallery-cell"></div>
+                            <div class="gallery-cell"></div>
+                            <div class="gallery-cell"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -141,6 +202,7 @@
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/forLib.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 
